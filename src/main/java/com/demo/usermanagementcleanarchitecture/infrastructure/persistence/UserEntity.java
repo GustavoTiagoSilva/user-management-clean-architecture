@@ -1,4 +1,4 @@
-package com.demo.usermanagementcleanarchitecture.model;
+package com.demo.usermanagementcleanarchitecture.infrastructure.persistence;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -10,7 +10,7 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name = "USERS")
-public class User {
+public class UserEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
